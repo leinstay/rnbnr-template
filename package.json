@@ -1,0 +1,31 @@
+{
+  "name": "rnbnr-template",
+  "version": "0.0.6",
+  "description": "React Native boilerplate template powered by NativeBase, ReactNavigation, ReduxToolkit and TypeScript that can be used to kickstart a mobile application.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leinstay/rnbnr-template.git"
+  },
+  "keywords": [
+    "react-native",
+    "template",
+    "starterkit",
+    "typescript",
+    "nativebase",
+    "reduxtoolkit",
+    "reactnavigation"
+  ],
+  "author": "Leinstay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leinstay/rnbnr-template/issues"
+  },
+  "homepage": "https://github.com/leinstay/rnbnr-template#readme"
+}
