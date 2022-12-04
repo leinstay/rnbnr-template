@@ -1,4 +1,4 @@
 module.exports = {
-  placeholderName: "rnbnrstarterkit",
+  placeholderName: "RNBNR",
   templateDir: "./template",
 };
