@@ -75,17 +75,13 @@ npx react-native init MyApp --template rnbnr-template
 Than install dependencies:
 
 ```bash
-npm install && ( cd ios && pod install )
+npm install
+cd ios && pod install # for iOS
 ```
 
-For Android devices or Android Simulator:
+And test your new application:
 
 ```bash
-npx react-native run-android
-```
-
-For iOS devices or iOS Simulator:
-
-```bash
-npx react-native run-ios
+npm run android # for Android devices or Android Simulator
+npm run ios # for Android devices or Android Simulator
 ```
