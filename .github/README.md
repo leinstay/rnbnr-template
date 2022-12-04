@@ -84,5 +84,5 @@ And test your new application:
 
 ```bash
 npm run android # for Android devices or Android Simulator
-npm run ios # for Android devices or Android Simulator
+npm run ios # for iOS devices or iOS Simulator
 ```
