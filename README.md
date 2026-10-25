@@ -73,7 +73,4 @@ template.config.js   react-native template entry
 
 ## License and credits
 
-MIT License, see [LICENSE](LICENSE).
-
-* Structure inspired by [react-native-starter-kit](https://github.com/mcnamee/react-native-starter-kit) by Matt McNamee: MIT License
-* [Poppins](https://fonts.google.com/specimen/Poppins) font by Indian Type Foundry: SIL Open Font License 1.1
+MIT License, see [LICENSE](LICENSE). The structure is inspired by [react-native-starter-kit](https://github.com/mcnamee/react-native-starter-kit) by Matt McNamee (MIT), and the example theme uses the [Poppins](https://fonts.google.com/specimen/Poppins) font by Indian Type Foundry (SIL Open Font License 1.1).
