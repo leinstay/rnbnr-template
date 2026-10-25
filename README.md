@@ -1,87 +1,79 @@
-# RNBNR Starter Kit
+# RNBNR Template
 
-This project is a [React Native](https://facebook.github.io/react-native/) boilerplate template powered by NativeBase, ReactNavigation, ReduxToolkit and TypeScript that can be used to kickstart a mobile application. The boilerplate provides **an optimized architecture for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. Live preview on [Google Play](https://play.google.com/store/apps/details?id=com.rnbnrstarterkit).
+React Native boilerplate powered by NativeBase, React Navigation, Redux Toolkit and TypeScript. It gives a new mobile app a working project structure with the UI and the business logic kept apart, plus four example screens and three components that show how the libraries fit together. There is a live preview on [Google Play](https://play.google.com/store/apps/details?id=com.rnbnrstarterkit). Inspired by [react-native-starter-kit](https://github.com/mcnamee/react-native-starter-kit).
 
-Inspiration: https://github.com/mcnamee/react-native-starter-kit
-
-![_1](https://user-images.githubusercontent.com/8215580/205414454-ffd036e5-7e2b-4e8e-a0e2-7fb803500137.gif)
-![_2](https://user-images.githubusercontent.com/8215580/205414460-9e18f865-9a6f-4706-90cc-be702b366a71.gif)
+![Cards and forms](https://user-images.githubusercontent.com/8215580/205414454-ffd036e5-7e2b-4e8e-a0e2-7fb803500137.gif)
+![Gallery](https://user-images.githubusercontent.com/8215580/205414460-9e18f865-9a6f-4706-90cc-be702b366a71.gif)
+![Session](https://user-images.githubusercontent.com/8215580/205414461-7eb6f37a-fd9a-4781-b978-72f9fb57c1bb.gif)
 
 ## Features
 
-This template consists of four screens and three components showing the interaction between used libraries and offers a predefined project structure.
+Screens
 
-### Views
+| Screen | Shows |
+|---|---|
+| `Cards.tsx` | A grid, bundled images and a component built from many props |
+| `Forms.tsx` | NativeBase UI with the Formik form controller, Yup validation and the RTK store |
+| `Gallery.tsx` | Local state, remote images and a gallery |
+| `Session.tsx` | Access to user files and basic CRUD on the store |
 
-- **Screens**
-  - Cards.tsx - _Demonstrates the use of a grid, images embedded in the application and a component constructed from a large number of props;_
-  - Forms.tsx - _Demonstrates integration between NativeBase UI, Formik form controller, Yup validator and RTK store;_
-  - Gallery.tsx - _Demonstrates the use of local state, remote images and gallery implementation;_
-  - Session.tsx - _Demonstrates access to user files and basic CRUD operations on store;_
-- **Components**
-  - AppBar.tsx - _Demonstrates basic examples of use of reducers and preservation of application data in offline mode;_
-  - Card.tsx - _Demonstrates reuse of a component by using props;_
-  - Modal.tsx - _Demonstrates reuse of a component by using store;_
+Components
 
-### Dependencies
+| Component | Shows |
+|---|---|
+| `AppBar.tsx` | Reducers and keeping app data while offline |
+| `Card.tsx` | Reusing a component through props |
+| `Modal.tsx` | Reusing a component through the store |
 
-- **Mandatory**
-  - [React v18](reactjs.org) - _base library;_
-  - [React Native v0.70](https://reactnative.dev/) - _base library;_
-  - [Native Base v3.4](https://nativebase.io/) - _user interface toolkit;_
-  - [React Navigation v6](https://reactnavigation.org/) - _routing and navigation;_
-  - [Redux Toolkit v1.9](https://redux-toolkit.js.org/) - _flux architecture;_
-- **Optional**
-  - [Formik v2.2](https://formik.org/) - _advanced form controller_
-  - [YUP v0.32](https://github.com/jquense/yup) - _validation schema builder_
-  - [React Native Document Picker v8.1](https://github.com/rnmods/react-native-document-picker) - _interface to access documents;_
-  - [React Native Image Viewing v0.2.2](https://github.com/jobtoday/react-native-image-viewing) - _gallery plugin;_
-  - [React Native Vector Icons v9.2](https://github.com/oblador/react-native-vector-icons) - _additional icons from Feather, FontAwesome, etc;_
-- **Development**
-  - [TypeScript v4.9](https://www.typescriptlang.org/) - _extends javascript by adding types to the language_
-  - [Prettier v2.8](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - _code formatter_
-  - [ESLint v7.32](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - _code linter (config extends @react-native-community/eslint-config rules)_
+Dependencies
 
-### Structure
+| | Library | Role |
+|---|---|---|
+| Core | [React 18](https://react.dev), [React Native 0.70](https://reactnative.dev/) | base |
+| | [NativeBase 3.4](https://nativebase.io/) | UI toolkit |
+| | [React Navigation 6](https://reactnavigation.org/) | routing |
+| | [Redux Toolkit 1.9](https://redux-toolkit.js.org/) | state |
+| Optional | [Formik 2.2](https://formik.org/), [Yup 0.32](https://github.com/jquense/yup) | forms and validation |
+| | [react-native-document-picker 8.1](https://github.com/rnmods/react-native-document-picker) | file access |
+| | [react-native-image-viewing 0.2](https://github.com/jobtoday/react-native-image-viewing) | gallery |
+| | [react-native-vector-icons 9.2](https://github.com/oblador/react-native-vector-icons) | icons |
+| Dev | TypeScript 4.9, Prettier 2.8, ESLint 7.32 with the `@react-native-community` rules | |
 
-- src
-  - assets - _static assets such as videos, fonts, images, etc_;
-  - components - _custom components for use in screens_;
-    - ...
-    - Component.tsx
-  - screens - _finished screens, i.e. views for your application_;
-    - ...
-    - Screen.tsx
-  - slices - _business logic implemented using Redux reducers;_
-    - ...
-    - Slice.tsx
-  - Theme.tsx - _global theme parameters, as an example this application uses the [Poppins](https://fonts.google.com/specimen/Poppins) font;_
-  - Store.tsx - _state container which holds the application's global state;_
-  - Types.tsx - _custom types and interfaces;_
-- App.tsx - _handles your app startup and routing;_
+## Requirements
+
+A machine with the [React Native dependencies](https://reactnative.dev/docs/environment-setup) installed. [React Native Debugger](https://github.com/jhen0409/react-native-debugger/releases) and the `eslint` and `prettier` plugins for your IDE are recommended. Their settings are in `.eslintrc.js` and `.prettierrc.js`.
 
 ## Installation
 
-- Install [React Native Debugger](https://github.com/jhen0409/react-native-debugger/releases) and open before running the app
-- Install `eslint` and `prettier` plugins into your IDE (you can adjust settings in .eslintrc.js and .prettierrc.js)
-- Ensure your machine has the [React Native dependencies installed](https://facebook.github.io/react-native/docs/getting-started)
-
-To create a new project using the boilerplate simply run:
+Create a new project from the template, install the dependencies and run it:
 
 ```bash
 npx react-native init MyApp --template rnbnr-template
-```
-
-Than install dependencies:
-
-```bash
+cd MyApp
 npm install
-cd ios && pod install # for iOS
+cd ios && pod install && cd ..   # iOS only
+npm run android                  # or: npm run ios
 ```
 
-And test your new application:
+## Layout
 
-```bash
-npm run android # for Android devices or Android Simulator
-npm run ios # for iOS devices or iOS Simulator
 ```
+template/
+  App.tsx            app startup and routing
+  src/
+    assets/          static assets (fonts, images, videos)
+    components/      reusable components
+    screens/         finished screens
+    slices/          business logic as Redux reducers
+    Theme.tsx        global theme, uses the Poppins font as an example
+    Store.tsx        the Redux store
+    Types.tsx        custom types and interfaces
+template.config.js   react-native template entry
+```
+
+## License and credits
+
+MIT License, see [LICENSE](LICENSE).
+
+* Structure inspired by [react-native-starter-kit](https://github.com/mcnamee/react-native-starter-kit) by Matt McNamee: MIT License
+* [Poppins](https://fonts.google.com/specimen/Poppins) font by Indian Type Foundry: SIL Open Font License 1.1
